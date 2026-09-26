@@ -1,0 +1,7 @@
+generated: "2026-09-26"
+method: derived
+source: "derived from absence of MCP endpoint"
+deployment:
+  mode: none
+  auth: none
+  verified: derived

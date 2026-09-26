@@ -1,23 +1,80 @@
 aid: artificiallabs
+
 name: Artificiallabs
-description: 'Artificiallabs is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Artificiallabs is an AI‑powered coding platform that automates software development. It provides an autonomous AI engineer named
+  Lloyd that writes, runs, tests, and validates code in real cloud VMs, delivering live proof of functionality. Users interact via a chat‑like
+  interface to describe features, bugs, or refactors, and watch the AI build and verify the solution, with support for web‑based IDE, LLM Lab,
+  and integration tools.
+
 url: https://raw.githubusercontent.com/api-evangelist/artificiallabs/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- AI
+- Coding Platform
+- Automation
+- Developer Tools
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/artificiallabs-well-known.yml
+- type: Hosts
+  url: hosts/artificiallabs-hosts.yml
+- type: Vendors
+  url: vendors/artificiallabs-vendors.yml
+- type: DomainSecurity
+  url: security/artificiallabs-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/artificiallabs
+  url: https://www.artificiallabs.ai
+- type: Documentation
+  url: https://www.artificiallabs.ai/help
+- type: GettingStarted
+  url: https://www.artificiallabs.ai/help
+- type: Pricing
+  url: https://www.artificiallabs.ai/pricing
+- type: TermsOfService
+  url: https://www.artificiallabs.ai/terms
+- type: PrivacyPolicy
+  url: https://www.artificiallabs.ai/privacy
+
+apis:
+- name: Artificial Labs API
+  description: Artificial Labs provides an AI coding platform with autonomous agents.
+  humanURL: https://www.artificiallabs.ai/help/
+  baseURL: null
+  aid: artificiallabs:artificial-labs-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: OpenAPI endpoint returns HTML marketing page instead of a machine‑readable spec.
+  evidence:
+  - url: https://www.artificiallabs.ai/openapi.json
+    status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
