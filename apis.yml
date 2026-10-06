@@ -20,7 +20,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-26'
 
-modified: '2026-09-26'
+modified: '2026-10-06'
 
 tags:
 - Artificial Intelligence
@@ -42,6 +42,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.artificiallabs.ai/news/
+  type: Blog
 - type: WellKnown
   url: well-known/artificiallabs-well-known.yml
 - type: Hosts
